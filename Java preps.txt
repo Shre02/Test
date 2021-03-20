@@ -1,0 +1,22 @@
+Java Questions:
+How Java Virtual Machine works? e.g. (Platform Independence, Garbage Collection, class files etc)
+What are the Object Oriented Programming Concepts Implemented in Java?
+Multi-threading
+Java Collection framework
+Good understanding of data types and few java.lang classes like String, Math, System etc. java.io stream concepts.
+Understand concept of Swing/AWT event based programming.
+Servlets & JSP concepts.
+Understand design patterns and its usage in Java
+Improvements on language from major version changes (Generics, Annotations, Enums, ...).
+Coding Conventions.
+Build tool (Ant) or Project Management Tool (Maven).
+Version control System like CVS/SVN/Perforce/Clearcase.
+Apache Commons Libraries & few other common open source libraries.
+Continuous Integration Tools and Unit testing.
+Fundamental understanding of XML
+Understand Business layer frameworks - like Spring
+Understanding of MVC Frameworks - Open source J2EE frameworks like - Struts, Webwork, Spring MVC, Tapestry.
+Fundamental understanding of Web Services.
+Good understanding of Web/Application server like Tomcat, Glassfish, WebLogic, WebSphere, Jetty etc.
+Unix environment - A working knowledge of Unix environment can be beneficial as most of the Java servers are hosted on Unix based environment in production.
+

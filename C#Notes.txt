@@ -1,0 +1,128 @@
+C# notes
+
+Console class:
+   Console.WriteLine("Hellow World")
+
+Namespace: Collection classes,interfaces,structs,enums and delegates. Assistane in avoid name clashes
+   using System;
+   using PATA = ProjectA.TeamA;  } user defined namespace
+   using PATB =Project.TeamB;
+
+
+Get user input:
+    string Name = Console.ReadLine();
+    Return type String
+    Console.wwriteLine("Hello {0}", Name)
+
+Data type:
+    class int.methods
+    class float.methods
+
+String:
+    Escape sequence character
+
+Verbatim literal : @"C:\User\data"
+    treats escape sequence as printable character
+
+Null Coalasing operator:
+    Value type: cant be Null
+    Reference type: value can be Null
+    To make value type nullable : int? = i null
+    int? a =null
+    int b = (int)a
+    *  int b = a ?? 0';  (if a = nul then put value of a as 0)
+  
+ Datatype Conversion:
+   Implicit Conversion    Explicit Conversion      
+    Done by processor      ToInt32(f): get execption for size
+			   (int)f : doesnt give exception give max of min value
+   int.Parse(num): gives exception for str a = "100G"
+   int.TryParse(a,out Result): returns bool value
+ 
+Switch statement:
+   switch(num)
+   {
+     case 1: break;
+     case 2: break;
+
+     .
+     .
+     default: break;
+   }     
+
+Methods:
+    Instance method: not having static keyword
+     access modifier return type function name(int parameter)
+     {
+       method body
+     }
+    classname instaceOfMethod = new classname()
+    instanceOfMethod.MethodNAme(parameter)
+
+    Pass by value: values point to two different memory locations
+    Pass by Reference: value points to the same memory location
+   
+    out parameter: return more than one value
+   
+    params keyword: allows to pass more than one argument to method
+********18 : assembly 15min
+
+Classes:
+     Instance classes
+     static classes: methods variables arguments can be used for all the members of the class only one object will be created in memory
+
+Delegates: type safe function pointer
+     Public delegate void MEthodNAme()
+     Signature of Delegate MUST MATCH with the Signature of the method its pointing
+
+
+File IO: StreamWrite streamReader
+
+Exceptions:
+     try{ 
+      try{
+      }
+      catch(Exception ex){
+      }
+     }
+     catch(Exception exception){
+      console.WriteLine("Current exception:", exception.getType().Name)
+      if(exception.InnerException != null)
+      {
+        console.WriteLine("Inner exception:", exception.InnerException.getType().Name)
+      }
+     }
+    
+     To create custom exception: Inherite from Exception bas class
+                                 We need to add constructor: invoke base()
+                                 Overloaded version of IneerException
+                                 Mark class as Serialzable
+**********Serialization?42:14.19
+
+
+Enum: Strongly typed constant
+      
+      public enum enum_name{
+     
+
+      }
+     
+      Enum is class having static methods
+      enum keyword to create enums
+
+      enum enum_name = (enum)value
+      int num = (int)enum.enum_value
+
+Access Modifiers:
+        Private 
+   	Public
+	Protected
+	Internal
+	Protected Internal
+   
+        Internal: accessesible anywhere within assembly
+	Protected Internal: accessible when a class in different assembley is inhereiting rom class in or assembly 
+	Types has Public and Internal access modifier 
+	     
+Attribute Class
+        [ObsoleteAttribute] : to indictae old methods    
